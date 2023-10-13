@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --text-color: rgb(250, 234, 8);
+    --accent-color: rgb(18, 22, 146);
+    --background-color:rgb(97, 21, 110);
+    --background-color-alternate:rgb(48, 56, 65);
+    
+    font-family: Arial, sans-serif;
+}
+.container{
+    max-width: 1600px;
+    margin: auto;
+}
+.button{
+    background-color:var(--background-color-alternate);
+    border-radius: 2px;
+    padding: 5px 15px;
+    display: block;
+    justify-content: flex-end;
+    color: var(--text-color);
+    font-size: 30px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--accent-color);
+    color: var(--text-color);
+    min-height: 71px;
+    display:flex;
+    justify-content: flex-end;
+}
+.button-conteiner{
+    display:flex;
+    justify-content: center;
+
+}
+.nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 22px;
+    padding: 2rem;
+    font-weight: bold;
+}
+.nav a:hover{
+    background-color:var(--background-color); 
+
+}
+.welcom-section{
+background:linear-gradient(62deg, #cbf706cd 0%, #ebd805dd 100%) ;
+height:100vh ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.welcom-section h1{
+    font-size: 60px;
+    color: rgb(18, 22, 146);
+
+}
+.welcom-section p{
+    font-size: 30px;
+    color:var(--accent-color) ;  
+}
+.project-section{
+    background-color:rgb(162, 186, 211);
+    padding: 100px 20px;   
+}
+.project-section h2{
+    font-size: 30px;
+    color: var(--accent-color);
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 60px;
+}
+.project-list{
+    display: grid;
+    gap: 20px;
+}
+@media (min-width:731px) {
+    .project-list{
+        grid-template-columns:1fr 1fr;
+    }
+    
+}
+
+@media (min-width:1400px) {
+    .project-list{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
